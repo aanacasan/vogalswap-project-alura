@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+:root {
+    --corprimaria: #dbabf7;
+    --corsecundaria: #80e6f8;
+    --corterciaria: #2105c0;
+    --corquaternaria: #9206e4;
+    --corquinaria: #e9c2ff;
+}
+
+body{
+    background: var(--corsecundaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter" , sans-serif;    
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;    
+}
+
+.cabecalho img{
+    max-width: 50px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+.main.container {
+    flex: 1;
+    padding: 2px;
+}
+
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+
+.container-input .input{
+    display: flex;
+}
+
+#input-texto{
+    width: 350px;
+    height: 250px;
+    font-size: 20px;
+    color: var(--corquaternaria);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: transparent;
+    padding: 5%;
+    padding-bottom: 1%;
+    text-transform: lowercase;
+}
+
+.informacao {
+    margin-left: 15%;
+    padding-bottom: 2%;
+    color: var(--corterciaria);
+}
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--corquaternaria);
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin-right: 5%;
+}
+
+#output h1{
+    font-size: 25px;
+    text-align: center;
+    color: var(--corterciaria);    
+}
+
+#output span{
+    font-size: 16px;
+    text-align: center;
+    color: var(--corquaternaria);
+}
+
+#output img{
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 6%;
+}
+
+.container-btn button{
+    border: 3px solid var(--corquaternaria);
+    border-radius: 15px;
+    text-decoration:none;
+    background: var(--corquinaria);
+    color: var(--corquaternaria);
+    width: 250px;
+    height: 50px;
+    margin-inline: 1%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-copiar{
+    border: 3px solid var(--corquaternaria);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--corquaternaria);
+    background: var(--corquinaria);
+    width: 250px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.container-btn button:hover{
+    border: 2px solid var(--corprimaria);
+    transition: 0.5s all;
+}
+
+.btn-copiar:hover{
+    border: 2px solid var(--corprimaria);
+    transition: 0.5s all;
+}
+
+.rodape{
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    background: var(--corquaternaria);
+    color: var(--corprimaria);
+    text-align: center;
+    padding: 1%;
+}
+
+.rodape h2{
+    font-size: 16px;
+}
+
+.icons ion-icon{
+    width: 25px;
+    height: 25px;
+    color: var(--corsecundaria)
+}
+
+.icons ion-icon:hover{
+    color: var(--corprimaria);
+}
